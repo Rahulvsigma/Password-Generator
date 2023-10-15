@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-      <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
@@ -13,54 +13,54 @@
     <h1>PASSWORD GENERATOR</h1>
     <div class="display-container">
         <input readonly type="text" placeholder="Password" class="display" displaypass>
-        <button data-copybtn>
-            <span data-copymsg></span>
+        <button class="copyy" data-copybtn>
+            <span class="tooltip"  data-copymsg></span>
             <img src="duplicate.png" alt="" width="23" height="23">
         </button>
     </div>
      
     <div class="input-container">
 
-        <div>
-            <p>Password length</p>
+        <div class="length-container">
+            <p>Password Length</p>
             <p data-lengthnumber>0</p>
         </div>
 
-        <div>
+        <div >
             <input type="range" min="1" max="20" class="slider" step="1" data-length-slider>
         </div> 
          
-        <div>
+        <div class="check">
             <input type="checkbox" id="uppercase">
             <label for="">Includes Uppercase letters</label>
         </div>
 
 
-        <div>
+        <div class="check">
             <input type="checkbox" id="lowercase">
             <label for="">Includes Lowercase letters</label>
         </div>
  
 
-        <div>
+        <div class="check">
             <input type="checkbox" id="numbers">
             <label for="">Includes Numbers </label>
         </div>
  
 
-        <div>
+        <div class="check">
             <input type="checkbox" id="symbols">
             <label for="">Includes Symbols </label>
         </div>
      
-         <div class="Strength-container">
+         <div class="strength-container">
             <p>Strength</p>
-            <div data-indicator></div>
+            <div class="indicator" data-indicator></div>
             
          </div>
 
-         <div class="generate-button">
-            <Button>GENERATE PASSWORD</Button>
+         <div class="bb">
+            <button class="generate-button">GENERATE PASSWORD</button>
          </div>
         
 
